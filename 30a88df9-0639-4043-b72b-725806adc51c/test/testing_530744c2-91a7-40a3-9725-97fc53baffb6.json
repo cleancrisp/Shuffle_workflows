@@ -120,7 +120,7 @@
     {
       "app_name": "Shuffle Tools",
       "app_version": "1.2.0",
-      "description": "Repeats the call parameter",
+      "description": "Get a value saved to your organization in Shuffle",
       "app_id": "3e2bdf9d5069fe3f4746c29d68785a6a",
       "errors": [],
       "id": "5410579c-c55a-4c9c-a4ed-6c909e2e87bf",
@@ -131,20 +131,43 @@
       "public": true,
       "generated": false,
       "environment": "Cloud",
-      "name": "repeat_back_to_me",
+      "name": "get_datastore_value",
       "parameters": [
         {
-          "description": "The message to repeat",
+          "description": "The key to get",
           "id": "",
-          "name": "call",
-          "example": "REPEATING: Hello world",
-          "value": "Hello world!",
-          "multiline": true,
+          "name": "key",
+          "example": "timestamp",
+          "value": "$shuffle_cache",
+          "multiline": false,
           "multiselect": false,
           "options": null,
           "action_field": "",
           "variant": "",
           "required": true,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": "string"
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        },
+        {
+          "description": "The category to get the value from. Not required.",
+          "id": "",
+          "name": "category",
+          "example": "tickets",
+          "value": "Agent requests",
+          "multiline": false,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": false,
           "configuration": false,
           "tags": null,
           "schema": {
@@ -164,8 +187,8 @@
         "value": ""
       },
       "position": {
-        "x": 304.2379104805305,
-        "y": 540.6080555719489
+        "x": 286.77016973760385,
+        "y": 109.73711724642847
       },
       "authentication_id": "",
       "category": "Other",
@@ -331,8 +354,8 @@
         }
       ],
       "position": {
-        "x": 255,
-        "y": 339.6
+        "x": 51.209691332524095,
+        "y": 10.624216008217513
       },
       "priority": 0,
       "source_workflow": "",
