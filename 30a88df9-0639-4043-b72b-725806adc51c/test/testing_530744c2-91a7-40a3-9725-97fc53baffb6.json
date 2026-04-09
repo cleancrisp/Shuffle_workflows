@@ -1,0 +1,608 @@
+{
+  "workflow_as_code": false,
+  "actions": [
+    {
+      "app_name": "Singul",
+      "app_version": "1.0.0",
+      "description": "Available actions for case management",
+      "app_id": "integration",
+      "errors": [],
+      "id": "d69f5034-9316-471b-83bc-0c89aec7fda8",
+      "is_valid": false,
+      "label": "Singul_1",
+      "public": false,
+      "generated": false,
+      "environment": "Cloud",
+      "name": "Cases",
+      "parameters": [
+        {
+          "description": "",
+          "id": "",
+          "name": "app_name",
+          "example": "",
+          "value": "noapp",
+          "multiline": false,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": true,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": ""
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        },
+        {
+          "description": "",
+          "id": "",
+          "name": "action",
+          "example": "",
+          "value": "create_ticket",
+          "multiline": false,
+          "multiselect": false,
+          "options": [
+            "create_ticket",
+            "list_tickets",
+            "get_ticket",
+            "close_ticket",
+            "add_comment",
+            "update_ticket",
+            "search_tickets"
+          ],
+          "action_field": "",
+          "variant": "",
+          "required": true,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": ""
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        },
+        {
+          "description": "",
+          "id": "",
+          "name": "fields",
+          "example": "",
+          "value": "{\n  \"ticket_id\": \"123456\",\n  \"comment\": \"This is a comment\"\n}",
+          "multiline": true,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": false,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": ""
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        }
+      ],
+      "execution_variable": {
+        "description": "",
+        "id": "",
+        "name": "",
+        "value": ""
+      },
+      "position": {
+        "x": 587.5,
+        "y": 333.1
+      },
+      "authentication_id": "",
+      "example": "noapp",
+      "category": "",
+      "reference_url": "",
+      "sub_action": false,
+      "run_magic_output": false,
+      "run_magic_input": false,
+      "execution_delay": 0,
+      "category_label": null,
+      "suggestion": false,
+      "parent_controlled": false,
+      "source_workflow": "",
+      "source_execution": ""
+    },
+    {
+      "app_name": "Shuffle Tools",
+      "app_version": "1.2.0",
+      "description": "Repeats the call parameter",
+      "app_id": "3e2bdf9d5069fe3f4746c29d68785a6a",
+      "errors": [],
+      "id": "5410579c-c55a-4c9c-a4ed-6c909e2e87bf",
+      "is_valid": true,
+      "isStartNode": true,
+      "sharing": true,
+      "label": "Shuffle_Tools_1",
+      "public": true,
+      "generated": false,
+      "environment": "Cloud",
+      "name": "repeat_back_to_me",
+      "parameters": [
+        {
+          "description": "The message to repeat",
+          "id": "",
+          "name": "call",
+          "example": "REPEATING: Hello world",
+          "value": "Hello world!",
+          "multiline": true,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": true,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": "string"
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        }
+      ],
+      "execution_variable": {
+        "description": "",
+        "id": "",
+        "name": "",
+        "value": ""
+      },
+      "position": {
+        "x": 304.2379104805305,
+        "y": 540.6080555719489
+      },
+      "authentication_id": "",
+      "category": "Other",
+      "reference_url": "",
+      "sub_action": false,
+      "run_magic_output": false,
+      "run_magic_input": false,
+      "execution_delay": 0,
+      "category_label": null,
+      "suggestion": false,
+      "parent_controlled": false,
+      "source_workflow": "",
+      "source_execution": ""
+    }
+  ],
+  "branches": [
+    {
+      "destination_id": "5410579c-c55a-4c9c-a4ed-6c909e2e87bf",
+      "id": "f2cefad2-e93a-4941-b2af-c1f1ac594a17",
+      "source_id": "975c8280-fb1b-4005-87fb-84d0764e4bf7",
+      "label": "",
+      "has_errors": false,
+      "conditions": [],
+      "decorator": false,
+      "parent_controlled": false,
+      "source_parent": ""
+    }
+  ],
+  "visual_branches": [],
+  "triggers": [
+    {
+      "app_name": "Webhook",
+      "description": "Custom HTTP input trigger",
+      "long_description": "Execute a workflow with an unauthicated POST request",
+      "status": "stopped",
+      "app_version": "1.0.0",
+      "errors": null,
+      "id": "975c8280-fb1b-4005-87fb-84d0764e4bf7",
+      "is_valid": true,
+      "isStartNode": false,
+      "label": "Webhook_1",
+      "small_image": "",
+      "large_image": "",
+      "environment": "cloud",
+      "trigger_type": "WEBHOOK",
+      "name": "Webhook",
+      "tags": null,
+      "parameters": [
+        {
+          "description": "",
+          "id": "",
+          "name": "url",
+          "example": "",
+          "value": "https://shuffle-backend-stbuwivzoq-nw.a.run.app/api/v1/hooks/webhook_975c8280-fb1b-4005-87fb-84d0764e4bf7",
+          "multiline": false,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": false,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": ""
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        },
+        {
+          "description": "",
+          "id": "",
+          "name": "tmp",
+          "example": "",
+          "value": "webhook_975c8280-fb1b-4005-87fb-84d0764e4bf7",
+          "multiline": false,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": false,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": ""
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        },
+        {
+          "description": "",
+          "id": "",
+          "name": "auth_headers",
+          "example": "",
+          "value": "",
+          "multiline": false,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": false,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": ""
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        },
+        {
+          "description": "",
+          "id": "",
+          "name": "custom_response_body",
+          "example": "",
+          "value": "",
+          "multiline": false,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": false,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": ""
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        },
+        {
+          "description": "",
+          "id": "",
+          "name": "await_response",
+          "example": "",
+          "value": "v1",
+          "multiline": false,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": false,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": ""
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        }
+      ],
+      "position": {
+        "x": 255,
+        "y": 339.6
+      },
+      "priority": 0,
+      "source_workflow": "",
+      "execution_delay": 0,
+      "app_association": {
+        "name": "",
+        "app_version": "",
+        "id": "",
+        "link": "",
+        "is_valid": false,
+        "generated": false,
+        "downloaded": false,
+        "sharing": false,
+        "verified": false,
+        "invalid": false,
+        "activated": false,
+        "tested": false,
+        "hash": "",
+        "private_id": "",
+        "environment": "",
+        "small_image": "",
+        "large_image": "",
+        "contact_info": {
+          "name": "",
+          "url": ""
+        },
+        "folder_mount": {
+          "folder_mount": false,
+          "source_folder": "",
+          "destination_folder": ""
+        },
+        "authentication": {
+          "type": "",
+          "required": false,
+          "parameters": null,
+          "redirect_uri": "",
+          "token_uri": "",
+          "refresh_uri": "",
+          "scope": null,
+          "client_id": "",
+          "client_secret": "",
+          "grant_type": ""
+        },
+        "actions": null,
+        "tags": null,
+        "categories": null,
+        "created": 0,
+        "edited": 0,
+        "last_runtime": 0,
+        "versions": null,
+        "loop_versions": null,
+        "owner": "",
+        "sharing_config": "",
+        "public": false,
+        "published_id": "",
+        "child_ids": null,
+        "reference_org": "",
+        "reference_url": "",
+        "action_file_path": "",
+        "template": false,
+        "documentation": "",
+        "description": "",
+        "documentation_download_url": "",
+        "primary_usecases": null,
+        "skipped_build": false,
+        "reference_info": {
+          "onprem_backup": false,
+          "is_partner": false,
+          "partner_contacts": "",
+          "documentation_url": "",
+          "github_url": "",
+          "triggers": null
+        },
+        "blogpost": "",
+        "video": "",
+        "company_url": "",
+        "contributors": null,
+        "revision_id": "",
+        "collection": ""
+      },
+      "parent_controlled": false,
+      "replacement_for_trigger": ""
+    }
+  ],
+  "comments": [],
+  "configuration": {
+    "exit_on_error": false,
+    "start_from_top": false,
+    "skip_notifications": false
+  },
+  "created": 1769601216,
+  "edited": 1775727830,
+  "last_runtime": 0,
+  "due_date": 1775595600,
+  "errors": [
+    "Singul action Singul_1 requires an app to use",
+    "Trigger Webhook needs to be started"
+  ],
+  "id": "530744c2-91a7-40a3-9725-97fc53baffb6",
+  "is_valid": true,
+  "name": "testing",
+  "description": "",
+  "start": "5410579c-c55a-4c9c-a4ed-6c909e2e87bf",
+  "owner": "e36a98ec-2930-4797-b826-4a7ec0ff5d91",
+  "sharing": "private",
+  "execution_org": {
+    "name": "Davidshuffle",
+    "id": "30a88df9-0639-4043-b72b-725806adc51c",
+    "users": null,
+    "role": "",
+    "child_orgs": null,
+    "region_url": "",
+    "is_partner": false,
+    "image": "",
+    "creator_org": "",
+    "branding": {
+      "enable_chat": false,
+      "home_url": "",
+      "theme": "",
+      "documentation_link": "",
+      "global_user": false,
+      "support_email": "",
+      "logout_url": "",
+      "brand_color": "",
+      "brand_name": ""
+    }
+  },
+  "org_id": "30a88df9-0639-4043-b72b-725806adc51c",
+  "workflow_variables": null,
+  "execution_environment": "",
+  "previously_saved": true,
+  "categories": {
+    "siem": {
+      "name": "",
+      "count": 0,
+      "id": "",
+      "description": "",
+      "large_image": ""
+    },
+    "communication": {
+      "name": "",
+      "count": 0,
+      "id": "",
+      "description": "",
+      "large_image": ""
+    },
+    "assets": {
+      "name": "",
+      "count": 0,
+      "id": "",
+      "description": "",
+      "large_image": ""
+    },
+    "cases": {
+      "name": "",
+      "count": 0,
+      "id": "",
+      "description": "",
+      "large_image": ""
+    },
+    "network": {
+      "name": "",
+      "count": 0,
+      "id": "",
+      "description": "",
+      "large_image": ""
+    },
+    "intel": {
+      "name": "",
+      "count": 0,
+      "id": "",
+      "description": "",
+      "large_image": ""
+    },
+    "edr": {
+      "name": "",
+      "count": 0,
+      "id": "",
+      "description": "",
+      "large_image": ""
+    },
+    "iam": {
+      "name": "",
+      "count": 0,
+      "id": "",
+      "description": "",
+      "large_image": ""
+    },
+    "ai": {
+      "name": "",
+      "count": 0,
+      "id": "",
+      "description": "",
+      "large_image": ""
+    },
+    "email": {
+      "name": "",
+      "count": 0,
+      "id": "",
+      "description": "",
+      "large_image": ""
+    },
+    "other": {
+      "name": "",
+      "count": 1,
+      "id": "",
+      "description": "",
+      "large_image": ""
+    }
+  },
+  "example_argument": "",
+  "public": false,
+  "default_return_value": "",
+  "contact_info": {
+    "name": "",
+    "url": ""
+  },
+  "published_id": "",
+  "revision_id": "",
+  "usecase_ids": [],
+  "input_questions": [],
+  "form_control": {
+    "input_markdown": "",
+    "output_yields": [],
+    "cleanup_actions": [],
+    "form_width": 500
+  },
+  "blogpost": "",
+  "video": "",
+  "status": "test",
+  "workflow_type": "",
+  "generated": false,
+  "hidden": false,
+  "background_processing": false,
+  "updated_by": "david@shuffler.io",
+  "validated": false,
+  "validation": {
+    "valid": false,
+    "changed_at": 1775727855000,
+    "last_valid": 1775727497000,
+    "validation_ran": true,
+    "notifications_created": 0,
+    "environment": "Cloud",
+    "workflow_id": "",
+    "execution_id": "af66ee42-47c4-4e41-8409-497bd9e46f8a",
+    "node_id": "",
+    "total_problems": 1,
+    "errors": [
+      {
+        "order": 0,
+        "action_id": "d69f5034-9316-471b-83bc-0c89aec7fda8",
+        "app_id": "integration",
+        "app_name": "Singul",
+        "error": "Success is false: Check node for more failure details",
+        "type": "configuration",
+        "waiting": false
+      }
+    ],
+    "subflow_apps": []
+  },
+  "parentorg_workflow": "",
+  "childorg_workflow_ids": null,
+  "suborg_distribution": [],
+  "backup_config": {
+    "onprem_backup": false,
+    "upload_repo": "",
+    "upload_branch": "",
+    "upload_username": "",
+    "upload_token": "",
+    "tokens_encrypted": false
+  },
+  "auth_groups": null
+}
