@@ -186,8 +186,8 @@
         "value": ""
       },
       "position": {
-        "x": 286.77016973760385,
-        "y": 109.73711724642847
+        "x": 282.4543607493114,
+        "y": 9.394558268628046
       },
       "authentication_id": "",
       "category": "Other",
@@ -364,8 +364,185 @@
         "value": ""
       },
       "position": {
-        "x": -62.59427587404687,
-        "y": 226.20439155058085
+        "x": 99.24856118692149,
+        "y": 334.0996162578931
+      },
+      "authentication_id": "",
+      "category": "Other",
+      "reference_url": "",
+      "sub_action": false,
+      "run_magic_output": false,
+      "run_magic_input": false,
+      "execution_delay": 0,
+      "category_label": null,
+      "suggestion": false,
+      "parent_controlled": false,
+      "source_workflow": "",
+      "source_execution": ""
+    },
+    {
+      "app_name": "Shuffle Tools",
+      "app_version": "1.2.0",
+      "description": "Run a command on remote machine with SSH",
+      "app_id": "3e2bdf9d5069fe3f4746c29d68785a6a",
+      "errors": [],
+      "id": "d146a77c-ceb8-49c8-9535-95c61554c0e8",
+      "is_valid": true,
+      "sharing": true,
+      "label": "Shuffle_Tools_2_copy",
+      "public": true,
+      "generated": false,
+      "environment": "Cloud",
+      "name": "run_ssh_command",
+      "parameters": [
+        {
+          "description": "Host IP",
+          "id": "",
+          "name": "host",
+          "example": "192.168.55.11",
+          "value": "34.180.59.114",
+          "multiline": false,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": true,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": "string"
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        },
+        {
+          "description": "A port on which SSH service is running",
+          "id": "",
+          "name": "port",
+          "example": "Default is 22",
+          "value": "22",
+          "multiline": false,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": false,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": "string"
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        },
+        {
+          "description": "User on remote system",
+          "id": "",
+          "name": "user_name",
+          "example": "root",
+          "value": "david",
+          "multiline": false,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": true,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": "string"
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        },
+        {
+          "description": "Private key file ID",
+          "id": "",
+          "name": "private_key_file_id",
+          "example": "file_c5c87a50-4146-40e2-a698-78cf13bf65c0",
+          "value": "",
+          "multiline": false,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": false,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": "string"
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        },
+        {
+          "description": "Password for SSH user. Use either password or private key.",
+          "id": "",
+          "name": "password",
+          "example": "***",
+          "value": "root",
+          "multiline": false,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": false,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": "string"
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        },
+        {
+          "description": "Command you want to run",
+          "id": "",
+          "name": "command",
+          "example": "ls -la",
+          "value": " cat shufflebackend-bom.json",
+          "multiline": true,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": true,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": "string"
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        }
+      ],
+      "execution_variable": {
+        "description": "",
+        "id": "",
+        "name": "",
+        "value": ""
+      },
+      "position": {
+        "x": 285.5647409527712,
+        "y": 408.2047623281382
       },
       "authentication_id": "",
       "category": "Other",
@@ -389,6 +566,17 @@
       "label": "",
       "has_errors": false,
       "conditions": [],
+      "decorator": false,
+      "parent_controlled": false,
+      "source_parent": ""
+    },
+    {
+      "destination_id": "d146a77c-ceb8-49c8-9535-95c61554c0e8",
+      "id": "9a1a66e2-5357-4c36-9113-559b8d0d88ca",
+      "source_id": "45642bb8-8d0a-49b3-8138-371de0fc3c81",
+      "label": "",
+      "has_errors": false,
+      "conditions": null,
       "decorator": false,
       "parent_controlled": false,
       "source_parent": ""
@@ -737,7 +925,7 @@
     },
     "other": {
       "name": "",
-      "count": 2,
+      "count": 3,
       "id": "",
       "description": "",
       "large_image": ""
