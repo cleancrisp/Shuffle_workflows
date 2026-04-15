@@ -2,123 +2,6 @@
   "workflow_as_code": false,
   "actions": [
     {
-      "app_name": "Singul",
-      "app_version": "1.0.0",
-      "description": "Available actions for case management",
-      "app_id": "integration",
-      "errors": [],
-      "id": "d69f5034-9316-471b-83bc-0c89aec7fda8",
-      "is_valid": true,
-      "isStartNode": true,
-      "label": "Singul_1",
-      "public": false,
-      "generated": false,
-      "environment": "Cloud",
-      "name": "Cases",
-      "parameters": [
-        {
-          "description": "",
-          "id": "",
-          "name": "app_name",
-          "example": "",
-          "value": "noapp",
-          "multiline": false,
-          "multiselect": false,
-          "options": null,
-          "action_field": "",
-          "variant": "",
-          "required": true,
-          "configuration": false,
-          "tags": null,
-          "schema": {
-            "type": ""
-          },
-          "skip_multicheck": false,
-          "value_replace": null,
-          "unique_toggled": false,
-          "error": "",
-          "hidden": false
-        },
-        {
-          "description": "",
-          "id": "",
-          "name": "action",
-          "example": "",
-          "value": "create_ticket",
-          "multiline": false,
-          "multiselect": false,
-          "options": [
-            "create_ticket",
-            "list_tickets",
-            "get_ticket",
-            "close_ticket",
-            "add_comment",
-            "update_ticket",
-            "search_tickets"
-          ],
-          "action_field": "",
-          "variant": "",
-          "required": true,
-          "configuration": false,
-          "tags": null,
-          "schema": {
-            "type": ""
-          },
-          "skip_multicheck": false,
-          "value_replace": null,
-          "unique_toggled": false,
-          "error": "",
-          "hidden": false
-        },
-        {
-          "description": "",
-          "id": "",
-          "name": "fields",
-          "example": "",
-          "value": "{\n  \"ticket_id\": \"123456\",\n  \"comment\": \"This is a comment\"\n}",
-          "multiline": true,
-          "multiselect": false,
-          "options": null,
-          "action_field": "",
-          "variant": "",
-          "required": false,
-          "configuration": false,
-          "tags": null,
-          "schema": {
-            "type": ""
-          },
-          "skip_multicheck": false,
-          "value_replace": null,
-          "unique_toggled": false,
-          "error": "",
-          "hidden": false
-        }
-      ],
-      "execution_variable": {
-        "description": "",
-        "id": "",
-        "name": "",
-        "value": ""
-      },
-      "position": {
-        "x": 587.5,
-        "y": 333.1
-      },
-      "authentication_id": "",
-      "example": "noapp",
-      "category": "",
-      "reference_url": "",
-      "sub_action": false,
-      "run_magic_output": false,
-      "run_magic_input": false,
-      "execution_delay": 0,
-      "category_label": null,
-      "suggestion": false,
-      "parent_controlled": false,
-      "source_workflow": "",
-      "source_execution": ""
-    },
-    {
       "app_name": "Shuffle Tools",
       "app_version": "1.2.0",
       "description": "Get a value saved to your organization in Shuffle",
@@ -211,6 +94,7 @@
       "errors": [],
       "id": "45642bb8-8d0a-49b3-8138-371de0fc3c81",
       "is_valid": true,
+      "isStartNode": true,
       "sharing": true,
       "label": "Shuffle_Tools_2",
       "public": true,
@@ -718,8 +602,8 @@
         "value": ""
       },
       "position": {
-        "x": 385.5647409527712,
-        "y": 508.2047623281382
+        "x": 452.96937538978784,
+        "y": 490.62094464891635
       },
       "authentication_id": "",
       "category": "Other",
@@ -735,25 +619,26 @@
       "source_execution": ""
     },
     {
-      "app_name": "AI Agent",
-      "app_version": "1.0.0",
-      "description": "Run an LLM query against any tool you want",
-      "app_id": "shuffle_agent",
+      "app_name": "Shuffle Tools",
+      "app_version": "1.2.0",
+      "description": "Returns uploaded file data",
+      "app_id": "3e2bdf9d5069fe3f4746c29d68785a6a",
       "errors": [],
-      "id": "2aed9069-eaa3-474f-a085-e5c4dfdbdd13",
+      "id": "e03664b0-e14f-4755-80eb-e10d6d3bef09",
       "is_valid": true,
-      "label": "AI_Agent_1",
-      "public": false,
+      "sharing": true,
+      "label": "Shuffle_Tools_3",
+      "public": true,
       "generated": false,
       "environment": "Cloud",
-      "name": "Run LLM",
+      "name": "create_file",
       "parameters": [
         {
-          "description": "The name of the app to run the LLM query against",
+          "description": "",
           "id": "",
-          "name": "app_name",
-          "example": "",
-          "value": "Shuffle AI",
+          "name": "filename",
+          "example": "test.csv",
+          "value": "$shuffle_tools_2_copy.output.bomFormat",
           "multiline": false,
           "multiselect": false,
           "options": null,
@@ -763,7 +648,7 @@
           "configuration": false,
           "tags": null,
           "schema": {
-            "type": ""
+            "type": "string"
           },
           "skip_multicheck": false,
           "value_replace": null,
@@ -772,11 +657,11 @@
           "hidden": false
         },
         {
-          "description": "The input data for the LLM query",
+          "description": "",
           "id": "",
-          "name": "input",
-          "example": "",
-          "value": "soc2 mapping how is it done?",
+          "name": "data",
+          "example": "EventID,username\n4137,frikky",
+          "value": "$shuffle_tools_2_copy.output",
           "multiline": true,
           "multiselect": false,
           "options": null,
@@ -786,7 +671,7 @@
           "configuration": false,
           "tags": null,
           "schema": {
-            "type": ""
+            "type": "string"
           },
           "skip_multicheck": false,
           "value_replace": null,
@@ -795,81 +680,21 @@
           "hidden": false
         },
         {
-          "description": "The action to perform automatically after the LLM query",
+          "description": "The category the file belongs to",
           "id": "",
-          "name": "action",
-          "example": "",
-          "value": "Nothing",
-          "multiline": false,
-          "multiselect": true,
-          "options": [
-            "Nothing",
-            "Create ticket",
-            "List tickets",
-            "Send Email",
-            "Get specific ticket",
-            "Update ticket",
-            "Add ticket comment"
-          ],
-          "action_field": "",
-          "variant": "",
-          "required": true,
-          "configuration": false,
-          "tags": null,
-          "schema": {
-            "type": ""
-          },
-          "skip_multicheck": false,
-          "value_replace": null,
-          "unique_toggled": false,
-          "error": "",
-          "hidden": false
-        },
-        {
-          "description": "Whether to store the conversation in memory",
-          "id": "",
-          "name": "memory",
-          "example": "",
-          "value": "Nothing",
+          "name": "category",
+          "example": "yara-rules",
+          "value": "",
           "multiline": false,
           "multiselect": false,
-          "options": [
-            "Nothing",
-            "Shuffle Datastore"
-          ],
+          "options": null,
           "action_field": "",
           "variant": "",
-          "required": true,
+          "required": false,
           "configuration": false,
           "tags": null,
           "schema": {
-            "type": ""
-          },
-          "skip_multicheck": false,
-          "value_replace": null,
-          "unique_toggled": false,
-          "error": "",
-          "hidden": false
-        },
-        {
-          "description": "The knowledge we should inject into the context window",
-          "id": "",
-          "name": "knowledge",
-          "example": "",
-          "value": "Nothing",
-          "multiline": false,
-          "multiselect": false,
-          "options": [
-            "Nothing",
-            "Shuffle Files"
-          ],
-          "action_field": "",
-          "variant": "",
-          "required": true,
-          "configuration": false,
-          "tags": null,
-          "schema": {
-            "type": ""
+            "type": "string"
           },
           "skip_multicheck": false,
           "value_replace": null,
@@ -885,11 +710,11 @@
         "value": ""
       },
       "position": {
-        "x": -77.68086861945221,
-        "y": -311.58551083182215
+        "x": 624.7797352118886,
+        "y": 490.7519572698965
       },
       "authentication_id": "",
-      "category": "",
+      "category": "Other",
       "reference_url": "",
       "sub_action": false,
       "run_magic_output": false,
@@ -903,6 +728,17 @@
     }
   ],
   "branches": [
+    {
+      "destination_id": "d146a77c-ceb8-49c8-9535-95c61554c0e8",
+      "id": "9a1a66e2-5357-4c36-9113-559b8d0d88ca",
+      "source_id": "45642bb8-8d0a-49b3-8138-371de0fc3c81",
+      "label": "",
+      "has_errors": false,
+      "conditions": [],
+      "decorator": false,
+      "parent_controlled": false,
+      "source_parent": ""
+    },
     {
       "destination_id": "5410579c-c55a-4c9c-a4ed-6c909e2e87bf",
       "id": "f2cefad2-e93a-4941-b2af-c1f1ac594a17",
@@ -926,12 +762,12 @@
       "source_parent": ""
     },
     {
-      "destination_id": "d146a77c-ceb8-49c8-9535-95c61554c0e8",
-      "id": "9a1a66e2-5357-4c36-9113-559b8d0d88ca",
-      "source_id": "45642bb8-8d0a-49b3-8138-371de0fc3c81",
+      "destination_id": "e03664b0-e14f-4755-80eb-e10d6d3bef09",
+      "id": "06d76498-4e10-4dee-b052-6a7045e4c712",
+      "source_id": "20e9a34f-dab5-47da-8477-a354b1a63b77",
       "label": "",
       "has_errors": false,
-      "conditions": [],
+      "conditions": null,
       "decorator": false,
       "parent_controlled": false,
       "source_parent": ""
@@ -1171,14 +1007,13 @@
   "last_runtime": 0,
   "due_date": 1775595600,
   "errors": [
-    "Singul action Singul_1 requires an app to use",
     "Trigger Webhook needs to be started"
   ],
   "id": "530744c2-91a7-40a3-9725-97fc53baffb6",
   "is_valid": true,
   "name": "testing",
   "description": "",
-  "start": "d69f5034-9316-471b-83bc-0c89aec7fda8",
+  "start": "45642bb8-8d0a-49b3-8138-371de0fc3c81",
   "owner": "e36a98ec-2930-4797-b826-4a7ec0ff5d91",
   "sharing": "private",
   "execution_org": {
@@ -1280,7 +1115,7 @@
     },
     "other": {
       "name": "",
-      "count": 4,
+      "count": 5,
       "id": "",
       "description": "",
       "large_image": ""
