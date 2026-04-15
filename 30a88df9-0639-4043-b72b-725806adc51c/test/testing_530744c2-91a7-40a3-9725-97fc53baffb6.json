@@ -8,7 +8,8 @@
       "app_id": "integration",
       "errors": [],
       "id": "d69f5034-9316-471b-83bc-0c89aec7fda8",
-      "is_valid": false,
+      "is_valid": true,
+      "isStartNode": true,
       "label": "Singul_1",
       "public": false,
       "generated": false,
@@ -210,7 +211,6 @@
       "errors": [],
       "id": "45642bb8-8d0a-49b3-8138-371de0fc3c81",
       "is_valid": true,
-      "isStartNode": true,
       "sharing": true,
       "label": "Shuffle_Tools_2",
       "public": true,
@@ -733,6 +733,173 @@
       "parent_controlled": false,
       "source_workflow": "",
       "source_execution": ""
+    },
+    {
+      "app_name": "AI Agent",
+      "app_version": "1.0.0",
+      "description": "Run an LLM query against any tool you want",
+      "app_id": "shuffle_agent",
+      "errors": [],
+      "id": "2aed9069-eaa3-474f-a085-e5c4dfdbdd13",
+      "is_valid": true,
+      "label": "AI_Agent_1",
+      "public": false,
+      "generated": false,
+      "environment": "Cloud",
+      "name": "Run LLM",
+      "parameters": [
+        {
+          "description": "The name of the app to run the LLM query against",
+          "id": "",
+          "name": "app_name",
+          "example": "",
+          "value": "Shuffle AI",
+          "multiline": false,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": true,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": ""
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        },
+        {
+          "description": "The input data for the LLM query",
+          "id": "",
+          "name": "input",
+          "example": "",
+          "value": "soc2 mapping",
+          "multiline": true,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": true,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": ""
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        },
+        {
+          "description": "The action to perform automatically after the LLM query",
+          "id": "",
+          "name": "action",
+          "example": "",
+          "value": "Nothing",
+          "multiline": false,
+          "multiselect": true,
+          "options": [
+            "Nothing",
+            "Create ticket",
+            "List tickets",
+            "Send Email",
+            "Get specific ticket",
+            "Update ticket",
+            "Add ticket comment"
+          ],
+          "action_field": "",
+          "variant": "",
+          "required": true,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": ""
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        },
+        {
+          "description": "Whether to store the conversation in memory",
+          "id": "",
+          "name": "memory",
+          "example": "",
+          "value": "Nothing",
+          "multiline": false,
+          "multiselect": false,
+          "options": [
+            "Nothing",
+            "Shuffle Datastore"
+          ],
+          "action_field": "",
+          "variant": "",
+          "required": true,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": ""
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        },
+        {
+          "description": "The knowledge we should inject into the context window",
+          "id": "",
+          "name": "knowledge",
+          "example": "",
+          "value": "Nothing",
+          "multiline": false,
+          "multiselect": false,
+          "options": [
+            "Nothing",
+            "Shuffle Files"
+          ],
+          "action_field": "",
+          "variant": "",
+          "required": true,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": ""
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        }
+      ],
+      "execution_variable": {
+        "description": "",
+        "id": "",
+        "name": "",
+        "value": ""
+      },
+      "position": {
+        "x": -77.68086861945221,
+        "y": -311.58551083182215
+      },
+      "authentication_id": "",
+      "category": "",
+      "reference_url": "",
+      "sub_action": false,
+      "run_magic_output": false,
+      "run_magic_input": false,
+      "execution_delay": 0,
+      "category_label": null,
+      "suggestion": false,
+      "parent_controlled": false,
+      "source_workflow": "",
+      "source_execution": ""
     }
   ],
   "branches": [
@@ -753,7 +920,7 @@
       "source_id": "d146a77c-ceb8-49c8-9535-95c61554c0e8",
       "label": "",
       "has_errors": false,
-      "conditions": null,
+      "conditions": [],
       "decorator": false,
       "parent_controlled": false,
       "source_parent": ""
@@ -764,7 +931,7 @@
       "source_id": "45642bb8-8d0a-49b3-8138-371de0fc3c81",
       "label": "",
       "has_errors": false,
-      "conditions": null,
+      "conditions": [],
       "decorator": false,
       "parent_controlled": false,
       "source_parent": ""
@@ -1000,7 +1167,7 @@
     "skip_notifications": false
   },
   "created": 1769601216,
-  "edited": 1775727830,
+  "edited": 1775813841,
   "last_runtime": 0,
   "due_date": 1775595600,
   "errors": [
@@ -1011,7 +1178,7 @@
   "is_valid": true,
   "name": "testing",
   "description": "",
-  "start": "45642bb8-8d0a-49b3-8138-371de0fc3c81",
+  "start": "d69f5034-9316-471b-83bc-0c89aec7fda8",
   "owner": "e36a98ec-2930-4797-b826-4a7ec0ff5d91",
   "sharing": "private",
   "execution_org": {
@@ -1128,12 +1295,12 @@
   },
   "published_id": "",
   "revision_id": "",
-  "usecase_ids": [],
-  "input_questions": [],
+  "usecase_ids": null,
+  "input_questions": null,
   "form_control": {
     "input_markdown": "",
-    "output_yields": [],
-    "cleanup_actions": [],
+    "output_yields": null,
+    "cleanup_actions": null,
     "form_width": 500
   },
   "blogpost": "",
