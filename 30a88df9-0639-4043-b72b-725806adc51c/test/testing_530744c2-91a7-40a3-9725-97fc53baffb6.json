@@ -617,6 +617,68 @@
       "parent_controlled": false,
       "source_workflow": "",
       "source_execution": ""
+    },
+    {
+      "app_name": "Shuffle Tools",
+      "app_version": "1.2.0",
+      "description": "Repeats the call parameter",
+      "app_id": "3e2bdf9d5069fe3f4746c29d68785a6a",
+      "errors": [],
+      "id": "963d9460-adbf-4731-9557-c4402ddace6f",
+      "is_valid": true,
+      "sharing": true,
+      "label": "Shuffle_Tools_3",
+      "public": true,
+      "generated": false,
+      "environment": "Cloud",
+      "name": "repeat_back_to_me",
+      "parameters": [
+        {
+          "description": "The message to repeat",
+          "id": "",
+          "name": "call",
+          "example": "REPEATING: Hello world",
+          "value": "Hello world!",
+          "multiline": true,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": true,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": "string"
+          },
+          "skip_multicheck": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        }
+      ],
+      "execution_variable": {
+        "description": "",
+        "id": "",
+        "name": "",
+        "value": ""
+      },
+      "position": {
+        "x": 898.1108911340989,
+        "y": 485.6942343371214
+      },
+      "authentication_id": "",
+      "category": "Other",
+      "reference_url": "",
+      "sub_action": false,
+      "run_magic_output": false,
+      "run_magic_input": false,
+      "execution_delay": 0,
+      "category_label": null,
+      "suggestion": false,
+      "parent_controlled": false,
+      "source_workflow": "",
+      "source_execution": ""
     }
   ],
   "branches": [
@@ -649,6 +711,17 @@
       "label": "",
       "has_errors": false,
       "conditions": [],
+      "decorator": false,
+      "parent_controlled": false,
+      "source_parent": ""
+    },
+    {
+      "destination_id": "963d9460-adbf-4731-9557-c4402ddace6f",
+      "id": "975666a1-7cf4-426f-8606-1e5dad52cf8e",
+      "source_id": "9b2471ce-171e-4140-a5c4-85b422cbb9f9",
+      "label": "",
+      "has_errors": false,
+      "conditions": null,
       "decorator": false,
       "parent_controlled": false,
       "source_parent": ""
@@ -1250,7 +1323,7 @@
     },
     "other": {
       "name": "",
-      "count": 4,
+      "count": 5,
       "id": "",
       "description": "",
       "large_image": ""
