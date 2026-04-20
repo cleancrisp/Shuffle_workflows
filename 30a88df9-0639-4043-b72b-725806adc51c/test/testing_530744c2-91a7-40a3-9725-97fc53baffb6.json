@@ -899,7 +899,7 @@
           "id": "",
           "name": "input",
           "example": "",
-          "value": "Type a sentence",
+          "value": "What is the third planet from the sun",
           "multiline": true,
           "multiselect": false,
           "options": null,
