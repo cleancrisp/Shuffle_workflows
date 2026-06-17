@@ -1055,6 +1055,143 @@
       "parent_controlled": false,
       "source_workflow": "",
       "source_execution": ""
+    },
+    {
+      "app_name": "email",
+      "app_version": "1.3.0",
+      "description": "Send an email from Shuffle",
+      "app_id": "f33aa6a9c04e64cbf5d89d927ff0cd38",
+      "errors": [],
+      "id": "fd16a541-eefa-4a22-83a5-d28083b39c45",
+      "is_valid": true,
+      "sharing": true,
+      "label": "email_1",
+      "public": true,
+      "generated": false,
+      "environment": "Cloud",
+      "name": "send_email_shuffle",
+      "parameters": [
+        {
+          "description": "Your https://shuffler.io apikey",
+          "id": "",
+          "name": "apikey",
+          "example": "https://shuffler.io apikey",
+          "value": "",
+          "multiline": false,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": true,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": "string"
+          },
+          "skip_multicheck": false,
+          "custom_value": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        },
+        {
+          "description": "The recipients of the email",
+          "id": "",
+          "name": "recipients",
+          "example": "test@example.com,support@shuffler.io",
+          "value": "",
+          "multiline": false,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": true,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": "string"
+          },
+          "skip_multicheck": false,
+          "custom_value": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        },
+        {
+          "description": "The subject to use",
+          "id": "",
+          "name": "subject",
+          "example": "SOS this is an alert :o",
+          "value": "",
+          "multiline": false,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": true,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": "string"
+          },
+          "skip_multicheck": false,
+          "custom_value": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        },
+        {
+          "description": "The body to add to the email",
+          "id": "",
+          "name": "body",
+          "example": "This is an email alert from Shuffler.io :)",
+          "value": "",
+          "multiline": true,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": true,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": "string"
+          },
+          "skip_multicheck": false,
+          "custom_value": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        }
+      ],
+      "execution_variable": {
+        "description": "",
+        "id": "",
+        "name": "",
+        "value": ""
+      },
+      "position": {
+        "x": 111.28751787790017,
+        "y": 789.4280298079799
+      },
+      "authentication_id": "",
+      "category": "communication",
+      "reference_url": "",
+      "sub_action": false,
+      "run_magic_output": false,
+      "run_magic_input": false,
+      "execution_delay": 0,
+      "category_label": [
+        "api"
+      ],
+      "suggestion": false,
+      "parent_controlled": false,
+      "source_workflow": "",
+      "source_execution": ""
     }
   ],
   "branches": [
@@ -1398,7 +1535,7 @@
     },
     "communication": {
       "name": "",
-      "count": 0,
+      "count": 1,
       "id": "",
       "description": "",
       "large_image": ""
