@@ -1055,6 +1055,69 @@
       "parent_controlled": false,
       "source_workflow": "",
       "source_execution": ""
+    },
+    {
+      "app_name": "Shuffle Tools",
+      "app_version": "1.2.0",
+      "description": "Repeats the call parameter",
+      "app_id": "3e2bdf9d5069fe3f4746c29d68785a6a",
+      "errors": [],
+      "id": "c4fa5306-2597-46ae-91b2-49c0db1b18ab",
+      "is_valid": true,
+      "sharing": true,
+      "label": "Shuffle_Tools_4",
+      "public": true,
+      "generated": false,
+      "environment": "Cloud",
+      "name": "repeat_back_to_me",
+      "parameters": [
+        {
+          "description": "The message to repeat",
+          "id": "",
+          "name": "call",
+          "example": "REPEATING: Hello world",
+          "value": "",
+          "multiline": true,
+          "multiselect": false,
+          "options": null,
+          "action_field": "",
+          "variant": "",
+          "required": true,
+          "configuration": false,
+          "tags": null,
+          "schema": {
+            "type": "string"
+          },
+          "skip_multicheck": false,
+          "custom_value": false,
+          "value_replace": null,
+          "unique_toggled": false,
+          "error": "",
+          "hidden": false
+        }
+      ],
+      "execution_variable": {
+        "description": "",
+        "id": "",
+        "name": "",
+        "value": ""
+      },
+      "position": {
+        "x": -611.5119012788314,
+        "y": 818.4650227980985
+      },
+      "authentication_id": "",
+      "category": "AI",
+      "reference_url": "",
+      "sub_action": false,
+      "run_magic_output": false,
+      "run_magic_input": false,
+      "execution_delay": 0,
+      "category_label": null,
+      "suggestion": false,
+      "parent_controlled": false,
+      "source_workflow": "",
+      "source_execution": ""
     }
   ],
   "branches": [
@@ -1461,7 +1524,7 @@
     },
     "other": {
       "name": "",
-      "count": 6,
+      "count": 7,
       "id": "",
       "description": "",
       "large_image": ""
