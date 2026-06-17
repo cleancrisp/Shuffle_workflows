@@ -34,6 +34,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -57,6 +58,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -119,6 +121,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -142,6 +145,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -165,6 +169,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -188,6 +193,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -211,6 +217,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -234,6 +241,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -296,6 +304,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -319,6 +328,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -342,6 +352,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -365,6 +376,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -388,6 +400,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -411,6 +424,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -473,6 +487,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -496,6 +511,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -519,6 +535,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -542,6 +559,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -565,6 +583,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -588,6 +607,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -650,6 +670,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -673,6 +694,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -696,6 +718,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -719,6 +742,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -742,6 +766,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -765,6 +790,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -828,6 +854,7 @@
             "type": "string"
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -889,6 +916,7 @@
             "type": ""
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -912,6 +940,7 @@
             "type": ""
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -943,6 +972,7 @@
             "type": ""
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -969,6 +999,7 @@
             "type": ""
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -995,6 +1026,7 @@
             "type": ""
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -1076,7 +1108,7 @@
       "source_id": "e56410ac-e475-426a-b76f-1600d2a0a040",
       "label": "",
       "has_errors": false,
-      "conditions": null,
+      "conditions": [],
       "decorator": false,
       "parent_controlled": false,
       "source_parent": ""
@@ -1120,6 +1152,7 @@
             "type": ""
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -1143,6 +1176,7 @@
             "type": ""
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -1166,6 +1200,7 @@
             "type": ""
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -1189,6 +1224,7 @@
             "type": ""
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -1212,6 +1248,7 @@
             "type": ""
           },
           "skip_multicheck": false,
+          "custom_value": false,
           "value_replace": null,
           "unique_toggled": false,
           "error": "",
@@ -1312,7 +1349,7 @@
     "skip_notifications": false
   },
   "created": 1769601216,
-  "edited": 1776426968,
+  "edited": 1776677698,
   "last_runtime": 0,
   "due_date": 1775595600,
   "errors": [
@@ -1439,7 +1476,7 @@
   },
   "published_id": "",
   "revision_id": "",
-  "usecase_ids": null,
+  "usecase_ids": [],
   "input_questions": null,
   "form_control": {
     "input_markdown": "",
